@@ -1,6 +1,6 @@
 # patch_gc_ending
 
-patch_gc_ending is a Python script that patches decompressed GameCube-edition Ocarina of Time ROMs (GC-EU, GC-EU-MQ, GC-US, GC-US-MQ) to fix a crash that occurs at the end of the credits when the ROM is run on real N64 hardware or an N64 emulator.
+patch_gc_credits is a Python script that patches decompressed GameCube-edition Ocarina of Time ROMs (GC-EU, GC-EU-MQ, GC-US, GC-US-MQ) to fix a crash that occurs at the end of the credits when the ROM is run on real N64 hardware or an N64 emulator.
 
 The script was written as part of a reverse engineering study of the credits routine in the GC editions of OoT, and the mechanism Nintendo used to trigger FMV playback from the GameCube disc.
 
@@ -36,13 +36,13 @@ The ROM version is auto-detected by scanning for a build date string embedded in
 
 ## Usage
 
-    python3 patch_gc_ending.py <decompressed.z64> <output.z64>
+    python3 patch_gc_credits.py <decompressed.z64> <output.z64>
 
 The input must be a decompressed ROM. GC-EU, GC-EU-MQ, GC-US, and GC-US-MQ are all supported and auto-detected.
 
 Example:
 
-    python3 patch_gc_ending.py input.z64 output.z64
+    python3 patch_gc_credits.py input.z64 output.z64
 
 ## Requirements
 
